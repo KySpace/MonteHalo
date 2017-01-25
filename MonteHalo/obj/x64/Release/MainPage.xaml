@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="MonteHalo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MonteHalo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Frame x:ConnectionId='1' x:Name="Trial"/>
+        <SplitView x:ConnectionId='2' x:Name="HamburgerMenu" 
+                   DisplayMode="CompactOverlay" 
+                   IsPaneOpen="False" 
+                   CompactPaneLength="48" 
+                   OpenPaneLength="320"
+                   >
+            <SplitView.Pane>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="48"/>
+                    </Grid.RowDefinitions>
+
+                    <RadioButton x:ConnectionId='3' x:Name="Hamburger"
+                                 Grid.Row="0"
+                                 Tag="&#xE700;"
+                                 Content="Menu"
+                                 Style="{ThemeResource NavigationButtonStyle}"                             
+                                                         />
+                    <RadioButton x:ConnectionId='4' x:Name="Simulation"
+                                 Grid.Row="1"
+                                 Tag="&#xE768;"
+                                 Content="Simulation Program"
+                                 Style="{ThemeResource NavigationButtonStyle}"
+                                                          />
+                    <RadioButton x:ConnectionId='5' x:Name="Algorithm"
+                                 Grid.Row="2"
+                                 Tag="&#xEE56;"
+                                 Content="Algorithm and Structure"
+                                 Style="{ThemeResource NavigationButtonStyle}"
+                                                         />
+                    <RadioButton x:ConnectionId='6' x:Name="Introduction"
+                                 Grid.Row="3"
+                                 Tag="&#xE8F1;"
+                                 Content="All about Halos"
+                                 Style="{ThemeResource NavigationButtonStyle}"
+                                                            />
+                    <RadioButton x:ConnectionId='7' x:Name="Settings"
+                                 Grid.Row="8"
+                                 Tag="&#xE713;"
+                                 Content="Settings"
+                                 Style="{ThemeResource NavigationButtonStyle}"
+                                                        />
+
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <StackPanel>
+
+                </StackPanel>
+            </SplitView.Content>
+        </SplitView>
+        
+    </Grid>
+</Page>
+

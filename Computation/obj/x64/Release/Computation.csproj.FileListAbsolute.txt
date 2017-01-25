@@ -1,0 +1,16 @@
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\bin\x64\Release\Computation.dll
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\bin\x64\Release\Computation.pdb
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\bin\x64\Release\Computation.pri
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\Computation.dll
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\Computation.pdb
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\priconfig.xml
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\priconfig.xml.intermediate
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\layout.resfiles
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\layout.resfiles.intermediate
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\resources.resfiles
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\resources.resfiles.intermediate
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\pri.resfiles
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\pri.resfiles.intermediate
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\qualifiers.txt
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\qualifiers.txt.intermediate
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\obj\x64\Release\MultipleQualifiersPerDimensionFound.txt

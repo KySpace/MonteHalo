@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="MonteHalo.TrialFrame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MonteHalo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:sharpdx="using:UWPSharpDXViewport"
+    xmlns:plot="using:MonteHalo.Graphics"
+    xmlns:camera="using:UWPSharpDXViewport.Camera"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+        <sharpdx:SwapChainViewport x:ConnectionId='1' MinWidth="600"
+                           MinHeight="800"                            
+                           x:Name="Viewport"   
+                                                                   
+                           >
+            <camera:Camera ObsMode="PositionLocked"  ProjMode="Perspective"/>
+            <plot:TestPointPlot x:ConnectionId='2' x:Name="initPointPlot"                                 
+                                                                                                        
+                                />
+        </sharpdx:SwapChainViewport>
+
+
+</Page>
+

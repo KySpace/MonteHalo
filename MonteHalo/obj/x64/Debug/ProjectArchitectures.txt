@@ -1,0 +1,10 @@
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\Computation.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\Computation.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\Computation.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\MonteHalo.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\Plotting\Plotting.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\Plotting\Plotting.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\Tests\Tests.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\UWPSharpDXViewport\UWPSharpDXViewport.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\UWPSharpDXViewport\UWPSharpDXViewport.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\UWPSharpDXViewport\UWPSharpDXViewport.csproj;x64

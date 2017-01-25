@@ -1,0 +1,3 @@
+F:\development\project MonteHalo\uwp\MonteHalo\Computation\Computation.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\HelixToolkit.UWP\HelixToolkit.UWP.csproj;x64
+F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\MonteHalo.csproj;x64

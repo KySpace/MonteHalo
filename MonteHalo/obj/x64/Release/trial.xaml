@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="MonteHalo.trial"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MonteHalo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:helix="using:HelixToolkit.UWP"
+    xmlns:helixModel="using:HelixToolkit.UWP.CommonDX"
+
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <helix:Viewport3DX Grid.Column="1">
+            <!--helix:ExampleCube3D RotationSpeed="0.1" /-->
+            <!--<Win8:ExampleCube3D RotationSpeed="1.0"/>-->
+            <!-- TODO: this didn't work - are these two instances sharing buffers? -->
+        </helix:Viewport3DX>
+    </Grid>
+</Page>
+

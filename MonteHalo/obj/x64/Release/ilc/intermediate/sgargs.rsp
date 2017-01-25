@@ -1,0 +1,10 @@
+/out:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\intermediate\SgGenerated\\"
+/int:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\intermediate\\"
+/ref:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\in\\"
+/ref:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\in\\"
+/ref:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x64\ilc\lib\Private\\"
+/ref:"F:\development\project MonteHalo\uwp\MonteHalo\MonteHalo\obj\x64\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib

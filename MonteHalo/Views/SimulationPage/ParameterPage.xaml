@@ -1,0 +1,107 @@
+﻿<Page
+    x:Class="MonteHalo.Views.SimulationPage.ParameterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MonteHalo.Views.SimulationPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:para="using:MonteHalo.ViewModels.SimulationPage.ParameterPage"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style x:Key="ParagraphTitleText" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI Light"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="LineHeight" Value="36"/>
+            <Setter Property="Margin" Value="0,15,0,15"/>
+            <Setter Property="Foreground" Value="{ThemeResource SystemBaseHighColor}"/>
+        </Style>
+        <Style x:Key="ParagraphContextText" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI Light"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="{ThemeResource SystemBaseHighColor}"/>
+        </Style>
+        <Style x:Key="ParameterTextBox" TargetType="TextBox">
+            <Setter Property="Height" Value="64"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="0,0,50,15"/>
+        </Style>
+        <Style x:Key="ParameterComboBox" TargetType="ComboBox">
+            <Setter Property="Height" Value="64"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="0,0,50,15"/>
+        </Style>
+    </Page.Resources>
+    <ScrollViewer>
+        <Grid Background="{ThemeResource SystemAltHighColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64"/>
+                <ColumnDefinition Width="*" MinWidth="600"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
+
+                <StackPanel Orientation="Vertical" x:Name="CrystalStackPanel">
+                    <TextBlock Style="{StaticResource ParagraphTitleText}" 
+                               Text="{x:Bind viewModel.CrystalTitle}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Style="{StaticResource ParameterTextBox}" 
+                                 Text="{x:Bind viewModel.MaxSize, Mode=TwoWay}" 
+                                 Header="Maximum Size"
+                                 Width="150"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Style="{StaticResource ParameterTextBox}" Text="{x:Bind viewModel.Rad1, Mode=TwoWay}" Header="Distance 1"/>
+                        <TextBox Style="{StaticResource ParameterTextBox}" Text="{x:Bind viewModel.Rad2, Mode=TwoWay}" Header="Distance 2"/>
+                        <TextBox Style="{StaticResource ParameterTextBox}" Text="{x:Bind viewModel.Rad3, Mode=TwoWay}" Header="Distance 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Style="{StaticResource ParameterTextBox}" Text="{x:Bind viewModel.Height, Mode=TwoWay}" Header="Height/Thickness"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox x:Name="OrientationBox"
+                                  Style="{StaticResource ParameterComboBox}"
+                                  ItemsSource="{x:Bind viewModel.Orientation}"
+                                  SelectedIndex="{x:Bind viewModel.SelectedOrientationIndex, Mode=TwoWay}"
+                                  Header="Orientation Type"
+                                  >
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate x:DataType="para:OrientationViewModel">
+                                    <TextBlock Style="{StaticResource ParagraphContextText}"
+                                               Text="{x:Bind Name, Mode=OneTime}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" x:Name="LightStackPanel">
+                    <TextBlock Style="{StaticResource ParagraphTitleText}" Text="{x:Bind viewModel.LightTitle}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Style="{StaticResource ParameterTextBox}" Text="{x:Bind viewModel.SunAltitude, Mode=TwoWay}" Header="Sun Altitude"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="TotalCount" Orientation="Horizontal">
+                    <TextBox Style="{StaticResource ParameterTextBox}" 
+                                 Text="{x:Bind viewModel.SimulationTimesTotal, Mode=TwoWay}"
+                                 Header="Total Simulation Times"
+                                 />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="StartButton" Content="Start" IsEnabled="{x:Bind viewModel.IsReady, Mode=TwoWay}"
+                            Width="150" Height="36" Margin="0,15,50,15" Click="StartButton_Click"/>
+                    <Button Content="Stop" Click="{x:Bind viewModel.Stop}"
+                            Width="150" Height="36" Margin="0,15,50,15" IsEnabled="False"/>
+                </StackPanel>
+
+            </StackPanel >
+        </Grid>
+    </ScrollViewer>
+</Page>
